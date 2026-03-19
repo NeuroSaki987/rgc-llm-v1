@@ -1105,27 +1105,8 @@ E_{\text{conflict}}^{(t+1)} \le E_{\text{conflict}}^{(t)}
 
 ---
 
-## 参考文献（占位版）
 
-> 注：以下为正式写作时需要补充的参考方向，不在本草稿中虚构具体条目编号。
-
-- Transformer and large language models
-- Efficient attention and sparse sequence modeling
-- State-space models for long sequence learning
-- Graph neural networks
-- Neuro-symbolic reasoning
-- Adaptive computation time
-- Early exit and dynamic depth networks
-- Retrieval-augmented generation
-- Memory-augmented neural architectures
-- Dual-process and deliberate reasoning in language models
-- Kuramoto synchronization and coupled oscillator systems
-- Variational free energy and structured latent models
-- Sinkhorn and Gumbel-Softmax for differentiable discrete optimization
-
----
-
-## 附录 A：核心算法伪代码（草稿）
+## 附录 A：核心算法伪代码
 
 ### Algorithm 1: RGC Inference
 
