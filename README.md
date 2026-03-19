@@ -1,8 +1,11 @@
 # RGC-LLM Engineering Prototype / RGC-LLM ~原型机~ 原型姬
 
-English: see [README.en.md](README.en.md)  
-中文：见 [README.zh-CN.md](README.zh-CN.md)
-数学：我不会latex，稍微等着，以后再补
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
+- English: see [README.en.md](README.en.md)  
+- 中文：见 [README.zh-CN.md](README.zh-CN.md)
+- 数学：我不会latex，稍微等着，以后再补[README.math.md](README.math.md)
 
 - 这是一个大语言模型的工程模型，不可用于生产，其可行性尚待验证
 - 暂且起名rgc_llm，以后要是发展起来了就换个高大上的名字，我不知道叫他什么
