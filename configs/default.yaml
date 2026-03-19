@@ -1,0 +1,42 @@
+seed: 42
+
+model:
+  hidden_dim: 128
+  phase_dim: 64
+  max_nodes: 256
+  resonance_steps: 3
+  deep_steps: 4
+  operator_threshold: 0.55
+  scheduler_actions:
+    - fast_decode
+    - deepen
+    - merge
+    - split
+    - infer
+    - resolve
+    - compress
+    - halt
+
+training:
+  lr: 0.0003
+  weight_decay: 0.01
+  batch_size: 2
+  epochs: 2
+  grad_clip: 1.0
+  text_loss_weight: 1.0
+  graph_consistency_weight: 0.2
+  operator_weight: 0.2
+  scheduler_weight: 0.1
+  self_driven_weight: 0.1
+  num_workers: 0
+  shuffle: true
+  checkpoint_every: 1
+  output_dir: outputs/default
+
+data:
+  train_file: data/train_samples.jsonl
+  valid_file:
+  file_format: auto
+  text_field: input
+  target_field: target
+  toy_samples: []

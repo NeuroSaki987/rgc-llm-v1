@@ -1,0 +1,12 @@
+{
+  "samples": [
+    {
+      "input": "A product launch slipped because supplier delays affected testing and certification.",
+      "target": "The graph should include supplier delays, testing, certification, and schedule slip."
+    },
+    {
+      "input": "如果需求突然增加，而库存不足，那么补货计划必须优先考虑高利润区域。",
+      "target": "图应表示需求增加、库存不足、补货目标和利润约束。"
+    }
+  ]
+}

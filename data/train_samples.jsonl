@@ -1,0 +1,4 @@
+{"input": "If database connections are exhausted, request latency rises and retries amplify load.", "target": "Represent causal links among connection exhaustion, rising latency, retries, and amplified load.", "domain": "systems"}
+{"input": "Design a launch plan for a new AI research product under budget and hiring constraints.", "target": "Organize objectives, constraints, milestones, and resource allocation into a solvable planning graph.", "domain": "planning"}
+{"input": "Alice told Bob that Carol rejected the proposal because the timeline was too risky.", "target": "Capture entities, rejection event, proposal, and timeline risk as a semantic-causal graph.", "domain": "language"}
+{"input": "比较太阳能和风能在储能受限情况下的供电稳定性。", "target": "图中应体现比较关系、储能约束以及稳定性目标。", "domain": "energy"}

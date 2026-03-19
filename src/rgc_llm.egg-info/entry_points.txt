@@ -1,0 +1,4 @@
+[console_scripts]
+rgc-export = rgc_llm.cli.export:app
+rgc-infer = rgc_llm.cli.infer:app
+rgc-train = rgc_llm.cli.train:app

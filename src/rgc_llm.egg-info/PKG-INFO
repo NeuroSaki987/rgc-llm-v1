@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: rgc-llm
+Version: 0.2.0
+Summary: RGC-LLM engineering prototype: resonant graph calculus language model
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.2
+Requires-Dist: pydantic>=2.6
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: typer>=0.12
+Requires-Dist: rich>=13.7
+Requires-Dist: numpy>=1.26
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# RGC-LLM Engineering Prototype / RGC-LLM 工程版原型
+
+English: see [README.en.md](README.en.md)  
+中文：见 [README.zh-CN.md](README.zh-CN.md)
+
+This repository upgrades the original research prototype into a more formal engineering layout with:
+
+- JSON / JSONL training data import
+- batch-oriented training loop
+- checkpoint metadata
+- model extraction and module export CLI
+- bilingual documentation
+
+本仓库在原始研究原型基础上升级为更正式的工程结构，新增：
+
+- JSON / JSONL 训练数据导入
+- 面向 batch 的训练循环
+- 带元信息的 checkpoint
+- 模型提取与子模块导出 CLI
+- 中英双语文档
+
+## Quick start / 快速开始
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .[dev]
+
+rgc-train fit --config configs/default.yaml
+rgc-infer run --config configs/default.yaml --checkpoint outputs/default/final.pt --text "Explain the causal chain behind rising latency."
+rgc-export inspect --checkpoint outputs/default/final.pt
+```
+
+## CLI overview / 命令总览
+
+```bash
+rgc-train fit --config configs/default.yaml
+rgc-infer run --config configs/default.yaml --text "..." --checkpoint outputs/default/final.pt
+rgc-export state-dict --config configs/default.yaml --checkpoint outputs/default/final.pt --output exports/state_dict.pt
+rgc-export modules --config configs/default.yaml --checkpoint outputs/default/final.pt --output-dir exports/modules
+rgc-export inspect --checkpoint outputs/default/final.pt
+```
